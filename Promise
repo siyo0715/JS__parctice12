@@ -1,0 +1,16 @@
+Promiseを関数内で使う
+
+
+const promiseFunc = () => {
+    return new Promise((resolve, reject) => {
+        someAsynchronousFunc(() => {
+            //非同期通信
+        }).then(() => {
+            //非同期通信が成功した場合
+            return resolve(`成功！`)
+        }).catch(() => {
+            //非同期通信が失敗した場合
+            return reject(`失敗`)
+        })
+    })
+}
