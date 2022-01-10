@@ -1,0 +1,11 @@
+const abcDef = async () => {
+    const hoge = await aiueoKa(() => {
+        //非同期
+    }).then(() => {
+        //成功時
+        return `成功`
+    }).catch(() => {
+        //失敗時
+        return `失敗`
+    })
+}
